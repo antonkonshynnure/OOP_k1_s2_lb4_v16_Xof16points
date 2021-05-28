@@ -1,6 +1,5 @@
 #include <iostream>
 #pragma once
-#include <vector>
 namespace LB4
 {
     using namespace std;
@@ -35,6 +34,8 @@ protected:
         };
 ref class func_2 : public Par_function {
 public:
+    Par_function(){x=0;y=0}
+    Par_function(double x1, double y1){x=x1;y=y1}
     func_2() : Par_function() {}
     func_2(double t)
     {
